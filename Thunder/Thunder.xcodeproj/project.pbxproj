@@ -14,6 +14,11 @@
 		185CCD4828D1C5B20072012E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185CCD4728D1C5B20072012E /* Assets.xcassets */; };
 		185CCD4B28D1C5B20072012E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CCD4928D1C5B20072012E /* LaunchScreen.storyboard */; };
 		185CCD4E28D1C5B20072012E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CCD4D28D1C5B20072012E /* main.m */; };
+		185CCD5628D2D1410072012E /* BoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CCD5528D2D1410072012E /* BoardViewController.m */; };
+		185CCD5928D2D1600072012E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CCD5828D2D1600072012E /* SettingViewController.m */; };
+		185CCD5D28D2D2C50072012E /* camp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185CCD5B28D2D2C50072012E /* camp.jpg */; };
+		185CCD5E28D2D2C50072012E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 185CCD5C28D2D2C50072012E /* logo.png */; };
+		E630DABF21394ECFAB0B26BE /* libPods-Thunder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 296F4609062D70C20FDA087B /* libPods-Thunder.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,15 @@
 		185CCD4A28D1C5B20072012E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		185CCD4C28D1C5B20072012E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		185CCD4D28D1C5B20072012E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		185CCD5428D2D1410072012E /* BoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoardViewController.h; sourceTree = "<group>"; };
+		185CCD5528D2D1410072012E /* BoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoardViewController.m; sourceTree = "<group>"; };
+		185CCD5728D2D1600072012E /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		185CCD5828D2D1600072012E /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		185CCD5B28D2D2C50072012E /* camp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = camp.jpg; path = "../../ images/camp.jpg"; sourceTree = "<group>"; };
+		185CCD5C28D2D2C50072012E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "../../ images/logo.png"; sourceTree = "<group>"; };
+		296F4609062D70C20FDA087B /* libPods-Thunder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Thunder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E2D6050C17F679F846B33F /* Pods-Thunder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thunder.release.xcconfig"; path = "Target Support Files/Pods-Thunder/Pods-Thunder.release.xcconfig"; sourceTree = "<group>"; };
+		C9A513B39F6AA7F2C82AB12F /* Pods-Thunder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thunder.debug.xcconfig"; path = "Target Support Files/Pods-Thunder/Pods-Thunder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E630DABF21394ECFAB0B26BE /* libPods-Thunder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +60,11 @@
 		185CCD2F28D1C5AD0072012E = {
 			isa = PBXGroup;
 			children = (
+				185CCD5A28D2D2A20072012E /* Images */,
 				185CCD3A28D1C5AD0072012E /* Thunder */,
 				185CCD3928D1C5AD0072012E /* Products */,
+				9578C5A510AE17C42D6DCC80 /* Pods */,
+				498BF243DA3E280FE28396A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +85,10 @@
 				185CCD3F28D1C5AD0072012E /* SceneDelegate.m */,
 				185CCD4128D1C5AD0072012E /* ViewController.h */,
 				185CCD4228D1C5AD0072012E /* ViewController.m */,
+				185CCD5428D2D1410072012E /* BoardViewController.h */,
+				185CCD5528D2D1410072012E /* BoardViewController.m */,
+				185CCD5728D2D1600072012E /* SettingViewController.h */,
+				185CCD5828D2D1600072012E /* SettingViewController.m */,
 				185CCD4428D1C5AD0072012E /* Main.storyboard */,
 				185CCD4728D1C5B20072012E /* Assets.xcassets */,
 				185CCD4928D1C5B20072012E /* LaunchScreen.storyboard */,
@@ -76,6 +98,32 @@
 			path = Thunder;
 			sourceTree = "<group>";
 		};
+		185CCD5A28D2D2A20072012E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				185CCD5B28D2D2C50072012E /* camp.jpg */,
+				185CCD5C28D2D2C50072012E /* logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		498BF243DA3E280FE28396A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				296F4609062D70C20FDA087B /* libPods-Thunder.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9578C5A510AE17C42D6DCC80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9A513B39F6AA7F2C82AB12F /* Pods-Thunder.debug.xcconfig */,
+				76E2D6050C17F679F846B33F /* Pods-Thunder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +131,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185CCD5128D1C5B20072012E /* Build configuration list for PBXNativeTarget "Thunder" */;
 			buildPhases = (
+				5D2A9DC35B22D67009D4BE9C /* [CP] Check Pods Manifest.lock */,
 				185CCD3428D1C5AD0072012E /* Sources */,
 				185CCD3528D1C5AD0072012E /* Frameworks */,
 				185CCD3628D1C5AD0072012E /* Resources */,
@@ -133,6 +182,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185CCD5D28D2D2C50072012E /* camp.jpg in Resources */,
+				185CCD5E28D2D2C50072012E /* logo.png in Resources */,
 				185CCD4B28D1C5B20072012E /* LaunchScreen.storyboard in Resources */,
 				185CCD4828D1C5B20072012E /* Assets.xcassets in Resources */,
 				185CCD4628D1C5AD0072012E /* Main.storyboard in Resources */,
@@ -141,15 +192,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D2A9DC35B22D67009D4BE9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Thunder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		185CCD3428D1C5AD0072012E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				185CCD4328D1C5AD0072012E /* ViewController.m in Sources */,
+				185CCD5628D2D1410072012E /* BoardViewController.m in Sources */,
 				185CCD3D28D1C5AD0072012E /* AppDelegate.m in Sources */,
 				185CCD4E28D1C5B20072012E /* main.m in Sources */,
 				185CCD4028D1C5AD0072012E /* SceneDelegate.m in Sources */,
+				185CCD5928D2D1600072012E /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +367,7 @@
 		};
 		185CCD5228D1C5B20072012E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A513B39F6AA7F2C82AB12F /* Pods-Thunder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,7 +386,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.www.Thunder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.www.testwifi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -316,6 +395,7 @@
 		};
 		185CCD5328D1C5B20072012E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E2D6050C17F679F846B33F /* Pods-Thunder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,7 +414,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.www.Thunder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.www.testwifi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = 1;
