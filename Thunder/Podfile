@@ -1,0 +1,6 @@
+target 'Thunder' do
+platform:ios,'10.0'
+pod 'CocoaAsyncSocket', '~> 7.6.5'
+pod 'MBProgressHUD', '~>1.2.0' 
+pod 'SDAutoLayout', '~> 2.1.3'
+end
