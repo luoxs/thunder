@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1859310928D9A63100CF7A8C /* crc.c in Sources */ = {isa = PBXBuildFile; fileRef = 1859310528D9A63000CF7A8C /* crc.c */; };
+		1859310A28D9A63100CF7A8C /* DataToBeWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = 1859310628D9A63000CF7A8C /* DataToBeWrite.m */; };
+		1859310B28D9A63100CF7A8C /* DataToBeRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 1859310728D9A63000CF7A8C /* DataToBeRead.m */; };
+		1859310F28D9A75900CF7A8C /* Socket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1859310D28D9A75900CF7A8C /* Socket.m */; };
 		185CCD3D28D1C5AD0072012E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CCD3C28D1C5AD0072012E /* AppDelegate.m */; };
 		185CCD4028D1C5AD0072012E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CCD3F28D1C5AD0072012E /* SceneDelegate.m */; };
 		185CCD4328D1C5AD0072012E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CCD4228D1C5AD0072012E /* ViewController.m */; };
@@ -22,6 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1859310328D9A63000CF7A8C /* DataToBeWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataToBeWrite.h; path = Thunder/DataToBeWrite.h; sourceTree = SOURCE_ROOT; };
+		1859310428D9A63000CF7A8C /* DataToBeRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataToBeRead.h; path = Thunder/DataToBeRead.h; sourceTree = SOURCE_ROOT; };
+		1859310528D9A63000CF7A8C /* crc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crc.c; path = Thunder/crc.c; sourceTree = SOURCE_ROOT; };
+		1859310628D9A63000CF7A8C /* DataToBeWrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataToBeWrite.m; path = Thunder/DataToBeWrite.m; sourceTree = SOURCE_ROOT; };
+		1859310728D9A63000CF7A8C /* DataToBeRead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataToBeRead.m; path = Thunder/DataToBeRead.m; sourceTree = SOURCE_ROOT; };
+		1859310828D9A63100CF7A8C /* crc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crc.h; path = Thunder/crc.h; sourceTree = SOURCE_ROOT; };
+		1859310D28D9A75900CF7A8C /* Socket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Socket.m; path = Thunder/Socket.m; sourceTree = SOURCE_ROOT; };
+		1859310E28D9A75900CF7A8C /* Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Socket.h; path = Thunder/Socket.h; sourceTree = SOURCE_ROOT; };
 		185CCD3828D1C5AD0072012E /* Thunder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185CCD3B28D1C5AD0072012E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		185CCD3C28D1C5AD0072012E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,9 +69,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1859310228D9A5E000CF7A8C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1859310528D9A63000CF7A8C /* crc.c */,
+				1859310828D9A63100CF7A8C /* crc.h */,
+				1859310428D9A63000CF7A8C /* DataToBeRead.h */,
+				1859310728D9A63000CF7A8C /* DataToBeRead.m */,
+				1859310328D9A63000CF7A8C /* DataToBeWrite.h */,
+				1859310628D9A63000CF7A8C /* DataToBeWrite.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1859310C28D9A65500CF7A8C /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				1859310E28D9A75900CF7A8C /* Socket.h */,
+				1859310D28D9A75900CF7A8C /* Socket.m */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
 		185CCD2F28D1C5AD0072012E = {
 			isa = PBXGroup;
 			children = (
+				1859310C28D9A65500CF7A8C /* Socket */,
+				1859310228D9A5E000CF7A8C /* Data */,
 				185CCD5A28D2D2A20072012E /* Images */,
 				185CCD3A28D1C5AD0072012E /* Thunder */,
 				185CCD3928D1C5AD0072012E /* Products */,
@@ -222,7 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1859310F28D9A75900CF7A8C /* Socket.m in Sources */,
 				185CCD4328D1C5AD0072012E /* ViewController.m in Sources */,
+				1859310A28D9A63100CF7A8C /* DataToBeWrite.m in Sources */,
+				1859310B28D9A63100CF7A8C /* DataToBeRead.m in Sources */,
+				1859310928D9A63100CF7A8C /* crc.c in Sources */,
 				185CCD5628D2D1410072012E /* BoardViewController.m in Sources */,
 				185CCD3D28D1C5AD0072012E /* AppDelegate.m in Sources */,
 				185CCD4E28D1C5B20072012E /* main.m in Sources */,
