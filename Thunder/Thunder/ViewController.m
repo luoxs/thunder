@@ -70,7 +70,7 @@
     [self.view addSubview:self.HUD];
     self.HUD.mode = MBProgressHUDModeIndeterminate;
     self.HUD.label.text = @"连接设备中……";
-    [self.HUD  showAnimated:YES];
+    [self.HUD showAnimated:YES];
     /*
     BoardViewController  *boardV = [[BoardViewController alloc] init];
     if(1){
@@ -84,7 +84,7 @@
 
 -(void)onConnected{
     [self.HUD  hideAnimated:YES];
-    [self.HUD   removeFromSuperview];
+    [self.HUD  removeFromSuperview];
     [self performSegueWithIdentifier:@"enterBoard" sender:self];
     //初始化数据
     //[self.header initData];
@@ -125,5 +125,8 @@
     }*/
 }
 
+-(void)viewWillDisappear:(BOOL)animated{
+    self.header.delegate = nil;
+}
 
 @end

@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-/*
 @interface DataToBeWrite : NSObject
 @property Byte start;   //0.通讯开始
 @property Byte power;   //1.0x01:开机 0x00:关机  0x02获取冰箱状态
@@ -21,10 +20,10 @@
 @property Byte crcL;     //8.CRC校验低8位
 @property Byte end;      //9.通讯结束
 
--(void)baseInit;
+//-(void)baseInit;
 @end
-*/
 
+/*
 @interface DataToBeWrite : NSObject
 @property Byte start;     //0.0xAA 通讯开始
 @property Byte command;   //1.0x?? 8种指令a
@@ -33,3 +32,4 @@
 @property Byte crcL;      //4.0x?? CRC校验低8位
 @property Byte end;       //5.0x55 通讯结束
 @end
+*/
