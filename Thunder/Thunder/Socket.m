@@ -7,10 +7,9 @@
 //
 #import "Socket.h"
 #import "crc.h"
-
 @implementation Socket
 
-
+//初始化存储空间
 - (void)initDevice{
     self.dataRead = [DataToBeRead alloc];
     self.dataWrite = [DataToBeWrite alloc];

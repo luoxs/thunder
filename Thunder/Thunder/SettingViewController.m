@@ -6,9 +6,12 @@
 //
 
 #import "SettingViewController.h"
+#import "SDAutoLayout.h"
+#import "Socket.h"
+#import "MBProgressHUD.h"
 
-@interface SettingViewController ()
-
+@interface SettingViewController ()<SocketDelegate>
+@property (strong, nonatomic)Socket *header;
 @end
 
 @implementation SettingViewController
@@ -27,5 +30,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)viewWillAppear:(BOOL)animated{
+    self.header.delegate = self;
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    self.header.delegate = nil;
+}
 
 @end

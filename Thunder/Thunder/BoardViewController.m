@@ -24,6 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self  setAutoLayout];
     self.currentDeviceName = [[NSString alloc]init];
     self.header = [Socket sharedInstance];
     self.header.delegate = self;
@@ -31,6 +32,54 @@
     [self.header initData];   //获取初始化数据
 }
 
+-(void)setAutoLayout{
+    [self.view setBackgroundColor:[UIColor blackColor]];
+    UIImageView *ivLogoBack = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ThunderBack.jpg"]];
+    [self.view addSubview:ivLogoBack];
+    ivLogoBack.sd_layout
+    .topSpaceToView(self.view, 0.0)
+    .leftSpaceToView(self.view, 0)
+    .rightSpaceToView(self.view, 0)
+    .heightRatioToView(self.view, 0.2);
+    
+    UIImageView *ivLogo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo"]];
+    [ivLogoBack addSubview:ivLogo];
+    ivLogo.sd_layout
+    .centerXEqualToView(ivLogoBack)
+    .centerYEqualToView(ivLogoBack)
+    .heightRatioToView(ivLogoBack, 0.6)
+    .autoWidthRatio(2362.0/945.0);
+    
+    
+    UIView *vback = [[UIView alloc ] init];
+    [vback setBackgroundColor:[UIColor colorWithRed:10.0/255.0 green:89.0/255.0 blue:129.0/255.0 alpha:1]];
+    [self.view addSubview:vback];
+    vback.sd_layout
+    .topSpaceToView(ivLogoBack, 0)
+    .leftSpaceToView(self.view, 0)
+    .rightSpaceToView(self.view, 0)
+    .heightRatioToView(self.view, 0.7);
+    
+    UIImageView *ivRefrige = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"single"]];
+    [vback addSubview:ivRefrige];
+    ivRefrige.sd_layout
+    .topSpaceToView(ivLogoBack, 30)
+    .centerXEqualToView(vback)
+    .widthRatioToView(self.view, 0.6)
+    .autoHeightRatio(674.0/1268.0);
+    
+    UILabel  *lbContr = [[UILabel alloc]init];
+    [self.view addSubview:lbContr];
+    lbContr.sd_layout
+        .topSpaceToView(vback, 0.0)
+        .centerXEqualToView(self.view)
+        .widthRatioToView(self.view, 0.8)
+        .autoHeightRatio(0.4);
+    lbContr.text = @"TEMPERATURE CONTROL";
+    lbContr.textColor = [UIColor whiteColor];
+    [lbContr setFont:[UIFont fontWithName:@"Arial" size:24.0]];
+}
+   
 /*
 #pragma mark - Navigation
 
@@ -67,7 +116,9 @@
     
 }
 
-
+-(void)viewWillAppear:(BOOL)animated{
+    self.header.delegate = self;
+}
 
 -(void)viewWillDisappear:(BOOL)animated{
     self.header.delegate = nil;

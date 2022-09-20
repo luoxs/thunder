@@ -11,6 +11,11 @@
 		1859310A28D9A63100CF7A8C /* DataToBeWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = 1859310628D9A63000CF7A8C /* DataToBeWrite.m */; };
 		1859310B28D9A63100CF7A8C /* DataToBeRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 1859310728D9A63000CF7A8C /* DataToBeRead.m */; };
 		1859310F28D9A75900CF7A8C /* Socket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1859310D28D9A75900CF7A8C /* Socket.m */; };
+		1859311328D9D4D000CF7A8C /* ThunderBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1859311028D9D4CF00CF7A8C /* ThunderBack.jpg */; };
+		1859311428D9D4D000CF7A8C /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = 1859311128D9D4D000CF7A8C /* light.png */; };
+		1859311528D9D4D000CF7A8C /* nolight.png in Resources */ = {isa = PBXBuildFile; fileRef = 1859311228D9D4D000CF7A8C /* nolight.png */; };
+		1859311828D9D8B100CF7A8C /* single.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1859311628D9D8B100CF7A8C /* single.PNG */; };
+		1859311928D9D8B100CF7A8C /* double.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1859311728D9D8B100CF7A8C /* double.PNG */; };
 		185CCD3D28D1C5AD0072012E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CCD3C28D1C5AD0072012E /* AppDelegate.m */; };
 		185CCD4028D1C5AD0072012E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CCD3F28D1C5AD0072012E /* SceneDelegate.m */; };
 		185CCD4328D1C5AD0072012E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CCD4228D1C5AD0072012E /* ViewController.m */; };
@@ -34,6 +39,11 @@
 		1859310828D9A63100CF7A8C /* crc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crc.h; path = Thunder/crc.h; sourceTree = SOURCE_ROOT; };
 		1859310D28D9A75900CF7A8C /* Socket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Socket.m; path = Thunder/Socket.m; sourceTree = SOURCE_ROOT; };
 		1859310E28D9A75900CF7A8C /* Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Socket.h; path = Thunder/Socket.h; sourceTree = SOURCE_ROOT; };
+		1859311028D9D4CF00CF7A8C /* ThunderBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ThunderBack.jpg; path = "../../ images/ThunderBack.jpg"; sourceTree = "<group>"; };
+		1859311128D9D4D000CF7A8C /* light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = light.png; path = "../../ images/light.png"; sourceTree = "<group>"; };
+		1859311228D9D4D000CF7A8C /* nolight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nolight.png; path = "../../ images/nolight.png"; sourceTree = "<group>"; };
+		1859311628D9D8B100CF7A8C /* single.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = single.PNG; path = "../../ images/single.PNG"; sourceTree = "<group>"; };
+		1859311728D9D8B100CF7A8C /* double.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = double.PNG; path = "../../ images/double.PNG"; sourceTree = "<group>"; };
 		185CCD3828D1C5AD0072012E /* Thunder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185CCD3B28D1C5AD0072012E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		185CCD3C28D1C5AD0072012E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -137,6 +147,11 @@
 		185CCD5A28D2D2A20072012E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1859311728D9D8B100CF7A8C /* double.PNG */,
+				1859311628D9D8B100CF7A8C /* single.PNG */,
+				1859311128D9D4D000CF7A8C /* light.png */,
+				1859311228D9D4D000CF7A8C /* nolight.png */,
+				1859311028D9D4CF00CF7A8C /* ThunderBack.jpg */,
 				185CCD5B28D2D2C50072012E /* camp.jpg */,
 				185CCD5C28D2D2C50072012E /* logo.png */,
 			);
@@ -218,9 +233,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1859311428D9D4D000CF7A8C /* light.png in Resources */,
 				185CCD5D28D2D2C50072012E /* camp.jpg in Resources */,
 				185CCD5E28D2D2C50072012E /* logo.png in Resources */,
+				1859311528D9D4D000CF7A8C /* nolight.png in Resources */,
+				1859311928D9D8B100CF7A8C /* double.PNG in Resources */,
 				185CCD4B28D1C5B20072012E /* LaunchScreen.storyboard in Resources */,
+				1859311828D9D8B100CF7A8C /* single.PNG in Resources */,
+				1859311328D9D4D000CF7A8C /* ThunderBack.jpg in Resources */,
 				185CCD4828D1C5B20072012E /* Assets.xcassets in Resources */,
 				185CCD4628D1C5AD0072012E /* Main.storyboard in Resources */,
 			);

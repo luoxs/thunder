@@ -28,9 +28,7 @@
 }
 
 -(void)setAutoLayout{
-    
     [self.view setBackgroundColor:[UIColor blackColor]];
-    
     UIImageView *ivBack = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"camp.jpg"]];
     [self.view addSubview:ivBack];
     ivBack.sd_layout
@@ -93,8 +91,7 @@
 -(void)onConnectFailed{
   
     [self.HUD  hideAnimated:YES];
-    [self.HUD   removeFromSuperview];
-    
+    [self.HUD   removeFromSuperview];    
     UIAlertController*alert = [UIAlertController
                                alertControllerWithTitle: NSLocalizedString(@"Alert", nil)
                                message: NSLocalizedString(@"Please connect WiFi in the settings", nil)
