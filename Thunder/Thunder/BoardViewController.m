@@ -156,12 +156,13 @@
     UILabel  *lbContr = [[UILabel alloc]init];
     [self.view addSubview:lbContr];
     lbContr.sd_layout
-        .topSpaceToView(vback, 0.0)
+        .topSpaceToView(vback, 8.0)
         .centerXEqualToView(self.view)
         .widthRatioToView(self.view, 0.8)
         .autoHeightRatio(0.2);
     lbContr.text = @"TEMPERATURE CONTROL";
     lbContr.textColor = [UIColor whiteColor];
+    lbContr.textAlignment = NSTextAlignmentCenter;
     [lbContr setFont:[UIFont fontWithName:@"Arial" size:24.0]];
 }
    
